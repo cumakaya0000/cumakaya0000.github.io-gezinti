@@ -1,0 +1,2839 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fakülte Rehberi</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero-gradient">
+        <div class="container">
+            <div class="hero-content text-center py-5">
+                <div class="hero-icon mb-4">
+                    <i class="bi bi-mortarboard-fill"></i>
+                </div>
+                <h1 class="hero-title mb-3">Akademik Rehber</h1>
+                <p class="hero-subtitle mb-4">Üniversitemiz Akademik Yapısı</p>
+                <div class="hero-stats d-flex justify-content-center gap-4">
+                    <div class="stat-item">
+                        <div class="stat-number">7</div>
+                        <div class="stat-label">Fakülte</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number">12</div>
+                        <div class="stat-label">Birim</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number">85</div>
+                        <div class="stat-label">Akademisyen</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-wrapper">
+        <div class="container py-5">
+            <!-- Fakülteler Section -->
+            <div class="content-header text-center mb-5">
+                <h2 class="section-title">Fakültelerimiz</h2>
+                <p class="section-subtitle">Fakülte başlıklarına tıklayarak akademik kadroyu görüntüleyin</p>
+            </div>
+
+            <div class="accordion modern-accordion" id="facultyAccordion">
+                <!-- İnsani Bilimler ve Edebiyat Fakültesi -->
+                <div class="accordion-item faculty-card">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed modern-accordion-btn" type="button" 
+                                data-bs-toggle="collapse" data-bs-target="#collapseInsaniBilimler" 
+                                aria-expanded="false" aria-controls="collapseInsaniBilimler">
+                            <div class="faculty-icon literature">
+                                <i class="bi bi-book-fill"></i>
+                            </div>
+                            <div class="faculty-info">
+                                <span class="faculty-name">İnsani Bilimler ve Edebiyat Fakültesi</span>
+                                <small class="faculty-count">3 Akademisyen • Tıklayın</small>
+                            </div>
+                            <div class="expand-indicator">
+                                <i class="bi bi-chevron-down"></i>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapseInsaniBilimler" class="accordion-collapse collapse" data-bs-parent="#facultyAccordion">
+                        <div class="accordion-body p-0">
+                            <!-- Desktop Table View -->
+                            <div class="table-responsive desktop-view">
+                                <table class="table modern-table mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th>Akademisyen</th>
+                                            <th>Unvan</th>
+                                            <th>Bölüm</th>
+                                            <th>Oda</th>
+                                            <th>İletişim</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="academic-row">
+                                            <td>
+                                                <div class="academic-profile">
+                                                    <img src="/placeholder.svg?height=40&width=40" alt="Prof. Dr. Ahmet Yılmaz" class="profile-img">
+                                                    <div class="profile-info">
+                                                        <h6 class="profile-name">Ahmet Yılmaz</h6>
+                                                        <small class="profile-role">Fakülte Dekanı</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge modern-badge primary">Prof. Dr.</span></td>
+                                            <td><span class="department-text">Türk Dili ve Edebiyatı</span></td>
+                                            <td><span class="room-badge">101-A</span></td>
+                                            <td>
+                                                <div class="contact-links">
+                                                    <a href="tel:+902125550101" class="contact-link">
+                                                        <i class="bi bi-telephone"></i>
+                                                    </a>
+                                                    <a href="mailto:a.yilmaz@uni.edu.tr" class="contact-link">
+                                                        <i class="bi bi-envelope"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="academic-row">
+                                            <td>
+                                                <div class="academic-profile">
+                                                    <img src="/placeholder.svg?height=40&width=40" alt="Doç. Dr. Burcu Aksoy" class="profile-img">
+                                                    <div class="profile-info">
+                                                        <h6 class="profile-name">Burcu Aksoy</h6>
+                                                        <small class="profile-role">Bölüm Başkanı</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge modern-badge success">Doç. Dr.</span></td>
+                                            <td><span class="department-text">İngiliz Dili ve Edebiyatı</span></td>
+                                            <td><span class="room-badge">102-B</span></td>
+                                            <td>
+                                                <div class="contact-links">
+                                                    <a href="tel:+902125550102" class="contact-link">
+                                                        <i class="bi bi-telephone"></i>
+                                                    </a>
+                                                    <a href="mailto:b.aksoy@uni.edu.tr" class="contact-link">
+                                                        <i class="bi bi-envelope"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="academic-row">
+                                            <td>
+                                                <div class="academic-profile">
+                                                    <img src="/placeholder.svg?height=40&width=40" alt="Dr. Öğr. Üyesi Mehmet Kaya" class="profile-img">
+                                                    <div class="profile-info">
+                                                        <h6 class="profile-name">Mehmet Kaya</h6>
+                                                        <small class="profile-role">Araştırma Görevlisi</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge modern-badge info">Dr. Öğr. Üyesi</span></td>
+                                            <td><span class="department-text">Tarih</span></td>
+                                            <td><span class="room-badge">103-C</span></td>
+                                            <td>
+                                                <div class="contact-links">
+                                                    <a href="tel:+902125550103" class="contact-link">
+                                                        <i class="bi bi-telephone"></i>
+                                                    </a>
+                                                    <a href="mailto:m.kaya@uni.edu.tr" class="contact-link">
+                                                        <i class="bi bi-envelope"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- Mobile Cards View -->
+                            <div class="mobile-cards mobile-view">
+                                <div class="mobile-academic-card">
+                                    <div class="mobile-card-header">
+                                        <img src="/placeholder.svg?height=60&width=60" alt="Prof. Dr. Ahmet Yılmaz" class="mobile-profile-img">
+                                        <div class="mobile-profile-info">
+                                            <h6 class="mobile-name">Ahmet Yılmaz</h6>
+                                            <span class="badge modern-badge primary mb-2">Prof. Dr.</span>
+                                            <p class="mobile-role">Fakülte Dekanı</p>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-card-body">
+                                        <div class="mobile-info-grid">
+                                            <div class="info-item">
+                                                <i class="bi bi-building"></i>
+                                                <span>Türk Dili ve Edebiyatı</span>
+                                            </div>
+                                            <div class="info-item">
+                                                <i class="bi bi-door-open"></i>
+                                                <span>101-A</span>
+                                            </div>
+                                        </div>
+                                        <div class="mobile-contact-actions">
+                                            <a href="tel:+902125550101" class="contact-btn phone">
+                                                <i class="bi bi-telephone"></i>
+                                                <span>Ara</span>
+                                            </a>
+                                            <a href="mailto:a.yilmaz@uni.edu.tr" class="contact-btn email">
+                                                <i class="bi bi-envelope"></i>
+                                                <span>Mail</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mobile-academic-card">
+                                    <div class="mobile-card-header">
+                                        <img src="/placeholder.svg?height=60&width=60" alt="Doç. Dr. Burcu Aksoy" class="mobile-profile-img">
+                                        <div class="mobile-profile-info">
+                                            <h6 class="mobile-name">Burcu Aksoy</h6>
+                                            <span class="badge modern-badge success mb-2">Doç. Dr.</span>
+                                            <p class="mobile-role">Bölüm Başkanı</p>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-card-body">
+                                        <div class="mobile-info-grid">
+                                            <div class="info-item">
+                                                <i class="bi bi-building"></i>
+                                                <span>İngiliz Dili ve Edebiyatı</span>
+                                            </div>
+                                            <div class="info-item">
+                                                <i class="bi bi-door-open"></i>
+                                                <span>102-B</span>
+                                            </div>
+                                        </div>
+                                        <div class="mobile-contact-actions">
+                                            <a href="tel:+902125550102" class="contact-btn phone">
+                                                <i class="bi bi-telephone"></i>
+                                                <span>Ara</span>
+                                            </a>
+                                            <a href="mailto:b.aksoy@uni.edu.tr" class="contact-btn email">
+                                                <i class="bi bi-envelope"></i>
+                                                <span>Mail</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mobile-academic-card">
+                                    <div class="mobile-card-header">
+                                        <img src="/placeholder.svg?height=60&width=60" alt="Dr. Öğr. Üyesi Mehmet Kaya" class="mobile-profile-img">
+                                        <div class="mobile-profile-info">
+                                            <h6 class="mobile-name">Mehmet Kaya</h6>
+                                            <span class="badge modern-badge info mb-2">Dr. Öğr. Üyesi</span>
+                                            <p class="mobile-role">Araştırma Görevlisi</p>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-card-body">
+                                        <div class="mobile-info-grid">
+                                            <div class="info-item">
+                                                <i class="bi bi-building"></i>
+                                                <span>Tarih</span>
+                                            </div>
+                                            <div class="info-item">
+                                                <i class="bi bi-door-open"></i>
+                                                <span>103-C</span>
+                                            </div>
+                                        </div>
+                                        <div class="mobile-contact-actions">
+                                            <a href="tel:+902125550103" class="contact-btn phone">
+                                                <i class="bi bi-telephone"></i>
+                                                <span>Ara</span>
+                                            </a>
+                                            <a href="mailto:m.kaya@uni.edu.tr" class="contact-btn email">
+                                                <i class="bi bi-envelope"></i>
+                                                <span>Mail</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Güzel Sanatlar Fakültesi -->
+                <div class="accordion-item faculty-card">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed modern-accordion-btn" type="button" 
+                                data-bs-toggle="collapse" data-bs-target="#collapseSanat" 
+                                aria-expanded="false" aria-controls="collapseSanat">
+                            <div class="faculty-icon arts">
+                                <i class="bi bi-palette-fill"></i>
+                            </div>
+                            <div class="faculty-info">
+                                <span class="faculty-name">Güzel Sanatlar Fakültesi</span>
+                                <small class="faculty-count">3 Akademisyen • Tıklayın</small>
+                            </div>
+                            <div class="expand-indicator">
+                                <i class="bi bi-chevron-down"></i>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapseSanat" class="accordion-collapse collapse" data-bs-parent="#facultyAccordion">
+                        <div class="accordion-body p-0">
+                            <!-- Desktop Table View -->
+                            <div class="table-responsive desktop-view">
+                                <table class="table modern-table mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th>Akademisyen</th>
+                                            <th>Unvan</th>
+                                            <th>Bölüm</th>
+                                            <th>Oda</th>
+                                            <th>İletişim</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="academic-row">
+                                            <td>
+                                                <div class="academic-profile">
+                                                    <img src="/placeholder.svg?height=40&width=40" alt="Prof. Dr. Kemal Arslan" class="profile-img">
+                                                    <div class="profile-info">
+                                                        <h6 class="profile-name">Kemal Arslan</h6>
+                                                        <small class="profile-role">Sanat Yönetmeni</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge modern-badge primary">Prof. Dr.</span></td>
+                                            <td><span class="department-text">Resim</span></td>
+                                            <td><span class="room-badge">204-A</span></td>
+                                            <td>
+                                                <div class="contact-links">
+                                                    <a href="tel:+902125550204" class="contact-link">
+                                                        <i class="bi bi-telephone"></i>
+                                                    </a>
+                                                    <a href="mailto:k.arslan@uni.edu.tr" class="contact-link">
+                                                        <i class="bi bi-envelope"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="academic-row">
+                                            <td>
+                                                <div class="academic-profile">
+                                                    <img src="/placeholder.svg?height=40&width=40" alt="Doç. Dr. Selin Yıldız" class="profile-img">
+                                                    <div class="profile-info">
+                                                        <h6 class="profile-name">Selin Yıldız</h6>
+                                                        <small class="profile-role">Müzik Direktörü</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge modern-badge success">Doç. Dr.</span></td>
+                                            <td><span class="department-text">Müzik</span></td>
+                                            <td><span class="room-badge">205-B</span></td>
+                                            <td>
+                                                <div class="contact-links">
+                                                    <a href="tel:+902125550205" class="contact-link">
+                                                        <i class="bi bi-telephone"></i>
+                                                    </a>
+                                                    <a href="mailto:s.yildiz@uni.edu.tr" class="contact-link">
+                                                        <i class="bi bi-envelope"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="academic-row">
+                                            <td>
+                                                <div class="academic-profile">
+                                                    <img src="/placeholder.svg?height=40&width=40" alt="Dr. Öğr. Üyesi Emre Güven" class="profile-img">
+                                                    <div class="profile-info">
+                                                        <h6 class="profile-name">Emre Güven</h6>
+                                                        <small class="profile-role">Atölye Sorumlusu</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge modern-badge info">Dr. Öğr. Üyesi</span></td>
+                                            <td><span class="department-text">Heykel</span></td>
+                                            <td><span class="room-badge">206-C</span></td>
+                                            <td>
+                                                <div class="contact-links">
+                                                    <a href="tel:+902125550206" class="contact-link">
+                                                        <i class="bi bi-telephone"></i>
+                                                    </a>
+                                                    <a href="mailto:e.guven@uni.edu.tr" class="contact-link">
+                                                        <i class="bi bi-envelope"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- Mobile Cards View -->
+                            <div class="mobile-cards mobile-view">
+                                <div class="mobile-academic-card">
+                                    <div class="mobile-card-header">
+                                        <img src="/placeholder.svg?height=60&width=60" alt="Prof. Dr. Kemal Arslan" class="mobile-profile-img">
+                                        <div class="mobile-profile-info">
+                                            <h6 class="mobile-name">Kemal Arslan</h6>
+                                            <span class="badge modern-badge primary mb-2">Prof. Dr.</span>
+                                            <p class="mobile-role">Sanat Yönetmeni</p>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-card-body">
+                                        <div class="mobile-info-grid">
+                                            <div class="info-item">
+                                                <i class="bi bi-building"></i>
+                                                <span>Resim</span>
+                                            </div>
+                                            <div class="info-item">
+                                                <i class="bi bi-door-open"></i>
+                                                <span>204-A</span>
+                                            </div>
+                                        </div>
+                                        <div class="mobile-contact-actions">
+                                            <a href="tel:+902125550204" class="contact-btn phone">
+                                                <i class="bi bi-telephone"></i>
+                                                <span>Ara</span>
+                                            </a>
+                                            <a href="mailto:k.arslan@uni.edu.tr" class="contact-btn email">
+                                                <i class="bi bi-envelope"></i>
+                                                <span>Mail</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mobile-academic-card">
+                                    <div class="mobile-card-header">
+                                        <img src="/placeholder.svg?height=60&width=60" alt="Doç. Dr. Selin Yıldız" class="mobile-profile-img">
+                                        <div class="mobile-profile-info">
+                                            <h6 class="mobile-name">Selin Yıldız</h6>
+                                            <span class="badge modern-badge success mb-2">Doç. Dr.</span>
+                                            <p class="mobile-role">Müzik Direktörü</p>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-card-body">
+                                        <div class="mobile-info-grid">
+                                            <div class="info-item">
+                                                <i class="bi bi-building"></i>
+                                                <span>Müzik</span>
+                                            </div>
+                                            <div class="info-item">
+                                                <i class="bi bi-door-open"></i>
+                                                <span>205-B</span>
+                                            </div>
+                                        </div>
+                                        <div class="mobile-contact-actions">
+                                            <a href="tel:+902125550205" class="contact-btn phone">
+                                                <i class="bi bi-telephone"></i>
+                                                <span>Ara</span>
+                                            </a>
+                                            <a href="mailto:s.yildiz@uni.edu.tr" class="contact-btn email">
+                                                <i class="bi bi-envelope"></i>
+                                                <span>Mail</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mobile-academic-card">
+                                    <div class="mobile-card-header">
+                                        <img src="/placeholder.svg?height=60&width=60" alt="Dr. Öğr. Üyesi Emre Güven" class="mobile-profile-img">
+                                        <div class="mobile-profile-info">
+                                            <h6 class="mobile-name">Emre Güven</h6>
+                                            <span class="badge modern-badge info mb-2">Dr. Öğr. Üyesi</span>
+                                            <p class="mobile-role">Atölye Sorumlusu</p>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-card-body">
+                                        <div class="mobile-info-grid">
+                                            <div class="info-item">
+                                                <i class="bi bi-building"></i>
+                                                <span>Heykel</span>
+                                            </div>
+                                            <div class="info-item">
+                                                <i class="bi bi-door-open"></i>
+                                                <span>206-C</span>
+                                            </div>
+                                        </div>
+                                        <div class="mobile-contact-actions">
+                                            <a href="tel:+902125550206" class="contact-btn phone">
+                                                <i class="bi bi-telephone"></i>
+                                                <span>Ara</span>
+                                            </a>
+                                            <a href="mailto:e.guven@uni.edu.tr" class="contact-btn email">
+                                                <i class="bi bi-envelope"></i>
+                                                <span>Mail</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- İktisadi ve İdari Bilimler Fakültesi -->
+                <div class="accordion-item faculty-card">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed modern-accordion-btn" type="button" 
+                                data-bs-toggle="collapse" data-bs-target="#collapseIIBF" 
+                                aria-expanded="false" aria-controls="collapseIIBF">
+                            <div class="faculty-icon business">
+                                <i class="bi bi-briefcase-fill"></i>
+                            </div>
+                            <div class="faculty-info">
+                                <span class="faculty-name">İktisadi ve İdari Bilimler Fakültesi</span>
+                                <small class="faculty-count">3 Akademisyen • Tıklayın</small>
+                            </div>
+                            <div class="expand-indicator">
+                                <i class="bi bi-chevron-down"></i>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapseIIBF" class="accordion-collapse collapse" data-bs-parent="#facultyAccordion">
+                        <div class="accordion-body p-0">
+                            <!-- Desktop Table View -->
+                            <div class="table-responsive desktop-view">
+                                <table class="table modern-table mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th>Akademisyen</th>
+                                            <th>Unvan</th>
+                                            <th>Bölüm</th>
+                                            <th>Oda</th>
+                                            <th>İletişim</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="academic-row">
+                                            <td>
+                                                <div class="academic-profile">
+                                                    <img src="/placeholder.svg?height=40&width=40" alt="Prof. Dr. Hasan Öztürk" class="profile-img">
+                                                    <div class="profile-info">
+                                                        <h6 class="profile-name">Hasan Öztürk</h6>
+                                                        <small class="profile-role">Fakülte Dekanı</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge modern-badge primary">Prof. Dr.</span></td>
+                                            <td><span class="department-text">İktisat</span></td>
+                                            <td><span class="room-badge">301-A</span></td>
+                                            <td>
+                                                <div class="contact-links">
+                                                    <a href="tel:+902125550301" class="contact-link">
+                                                        <i class="bi bi-telephone"></i>
+                                                    </a>
+                                                    <a href="mailto:h.ozturk@uni.edu.tr" class="contact-link">
+                                                        <i class="bi bi-envelope"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="academic-row">
+                                            <td>
+                                                <div class="academic-profile">
+                                                    <img src="/placeholder.svg?height=40&width=40" alt="Doç. Dr. Fatma Erdoğan" class="profile-img">
+                                                    <div class="profile-info">
+                                                        <h6 class="profile-name">Fatma Erdoğan</h6>
+                                                        <small class="profile-role">Bölüm Başkanı</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge modern-badge success">Doç. Dr.</span></td>
+                                            <td><span class="department-text">İşletme</span></td>
+                                            <td><span class="room-badge">302-B</span></td>
+                                            <td>
+                                                <div class="contact-links">
+                                                    <a href="tel:+902125550302" class="contact-link">
+                                                        <i class="bi bi-telephone"></i>
+                                                    </a>
+                                                    <a href="mailto:f.erdogan@uni.edu.tr" class="contact-link">
+                                                        <i class="bi bi-envelope"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="academic-row">
+                                            <td>
+                                                <div class="academic-profile">
+                                                    <img src="/placeholder.svg?height=40&width=40" alt="Dr. Öğr. Üyesi Ali Kılıç" class="profile-img">
+                                                    <div class="profile-info">
+                                                        <h6 class="profile-name">Ali Kılıç</h6>
+                                                        <small class="profile-role">Araştırma Görevlisi</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge modern-badge info">Dr. Öğr. Üyesi</span></td>
+                                            <td><span class="department-text">Kamu Yönetimi</span></td>
+                                            <td><span class="room-badge">303-C</span></td>
+                                            <td>
+                                                <div class="contact-links">
+                                                    <a href="tel:+902125550303" class="contact-link">
+                                                        <i class="bi bi-telephone"></i>
+                                                    </a>
+                                                    <a href="mailto:a.kilic@uni.edu.tr" class="contact-link">
+                                                        <i class="bi bi-envelope"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- Mobile Cards View -->
+                            <div class="mobile-cards mobile-view">
+                                <div class="mobile-academic-card">
+                                    <div class="mobile-card-header">
+                                        <img src="/placeholder.svg?height=60&width=60" alt="Prof. Dr. Hasan Öztürk" class="mobile-profile-img">
+                                        <div class="mobile-profile-info">
+                                            <h6 class="mobile-name">Hasan Öztürk</h6>
+                                            <span class="badge modern-badge primary mb-2">Prof. Dr.</span>
+                                            <p class="mobile-role">Fakülte Dekanı</p>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-card-body">
+                                        <div class="mobile-info-grid">
+                                            <div class="info-item">
+                                                <i class="bi bi-building"></i>
+                                                <span>İktisat</span>
+                                            </div>
+                                            <div class="info-item">
+                                                <i class="bi bi-door-open"></i>
+                                                <span>301-A</span>
+                                            </div>
+                                        </div>
+                                        <div class="mobile-contact-actions">
+                                            <a href="tel:+902125550301" class="contact-btn phone">
+                                                <i class="bi bi-telephone"></i>
+                                                <span>Ara</span>
+                                            </a>
+                                            <a href="mailto:h.ozturk@uni.edu.tr" class="contact-btn email">
+                                                <i class="bi bi-envelope"></i>
+                                                <span>Mail</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mobile-academic-card">
+                                    <div class="mobile-card-header">
+                                        <img src="/placeholder.svg?height=60&width=60" alt="Doç. Dr. Fatma Erdoğan" class="mobile-profile-img">
+                                        <div class="mobile-profile-info">
+                                            <h6 class="mobile-name">Fatma Erdoğan</h6>
+                                            <span class="badge modern-badge success mb-2">Doç. Dr.</span>
+                                            <p class="mobile-role">Bölüm Başkanı</p>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-card-body">
+                                        <div class="mobile-info-grid">
+                                            <div class="info-item">
+                                                <i class="bi bi-building"></i>
+                                                <span>İşletme</span>
+                                            </div>
+                                            <div class="info-item">
+                                                <i class="bi bi-door-open"></i>
+                                                <span>302-B</span>
+                                            </div>
+                                        </div>
+                                        <div class="mobile-contact-actions">
+                                            <a href="tel:+902125550302" class="contact-btn phone">
+                                                <i class="bi bi-telephone"></i>
+                                                <span>Ara</span>
+                                            </a>
+                                            <a href="mailto:f.erdogan@uni.edu.tr" class="contact-btn email">
+                                                <i class="bi bi-envelope"></i>
+                                                <span>Mail</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mobile-academic-card">
+                                    <div class="mobile-card-header">
+                                        <img src="/placeholder.svg?height=60&width=60" alt="Dr. Öğr. Üyesi Ali Kılıç" class="mobile-profile-img">
+                                        <div class="mobile-profile-info">
+                                            <h6 class="mobile-name">Ali Kılıç</h6>
+                                            <span class="badge modern-badge info mb-2">Dr. Öğr. Üyesi</span>
+                                            <p class="mobile-role">Araştırma Görevlisi</p>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-card-body">
+                                        <div class="mobile-info-grid">
+                                            <div class="info-item">
+                                                <i class="bi bi-building"></i>
+                                                <span>Kamu Yönetimi</span>
+                                            </div>
+                                            <div class="info-item">
+                                                <i class="bi bi-door-open"></i>
+                                                <span>303-C</span>
+                                            </div>
+                                        </div>
+                                        <div class="mobile-contact-actions">
+                                            <a href="tel:+902125550303" class="contact-btn phone">
+                                                <i class="bi bi-telephone"></i>
+                                                <span>Ara</span>
+                                            </a>
+                                            <a href="mailto:a.kilic@uni.edu.tr" class="contact-btn email">
+                                                <i class="bi bi-envelope"></i>
+                                                <span>Mail</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- İlahiyat Fakültesi -->
+                <div class="accordion-item faculty-card">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed modern-accordion-btn" type="button" 
+                                data-bs-toggle="collapse" data-bs-target="#collapseIlahiyat" 
+                                aria-expanded="false" aria-controls="collapseIlahiyat">
+                            <div class="faculty-icon literature">
+                                <i class="bi bi-book-half"></i>
+                            </div>
+                            <div class="faculty-info">
+                                <span class="faculty-name">İlahiyat Fakültesi</span>
+                                <small class="faculty-count">3 Akademisyen • Tıklayın</small>
+                            </div>
+                            <div class="expand-indicator">
+                                <i class="bi bi-chevron-down"></i>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapseIlahiyat" class="accordion-collapse collapse" data-bs-parent="#facultyAccordion">
+                        <div class="accordion-body p-0">
+                            <!-- Desktop Table View -->
+                            <div class="table-responsive desktop-view">
+                                <table class="table modern-table mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th>Akademisyen</th>
+                                            <th>Unvan</th>
+                                            <th>Bölüm</th>
+                                            <th>Oda</th>
+                                            <th>İletişim</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="academic-row">
+                                            <td>
+                                                <div class="academic-profile">
+                                                    <img src="/placeholder.svg?height=40&width=40" alt="Prof. Dr. İbrahim Yıldırım" class="profile-img">
+                                                    <div class="profile-info">
+                                                        <h6 class="profile-name">İbrahim Yıldırım</h6>
+                                                        <small class="profile-role">Fakülte Dekanı</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge modern-badge primary">Prof. Dr.</span></td>
+                                            <td><span class="department-text">Temel İslam Bilimleri</span></td>
+                                            <td><span class="room-badge">401-A</span></td>
+                                            <td>
+                                                <div class="contact-links">
+                                                    <a href="tel:+902125550401" class="contact-link">
+                                                        <i class="bi bi-telephone"></i>
+                                                    </a>
+                                                    <a href="mailto:i.yildirim@uni.edu.tr" class="contact-link">
+                                                        <i class="bi bi-envelope"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="academic-row">
+                                            <td>
+                                                <div class="academic-profile">
+                                                    <img src="/placeholder.svg?height=40&width=40" alt="Doç. Dr. Ayşe Nur Koç" class="profile-img">
+                                                    <div class="profile-info">
+                                                        <h6 class="profile-name">Ayşe Nur Koç</h6>
+                                                        <small class="profile-role">Bölüm Başkanı</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge modern-badge success">Doç. Dr.</span></td>
+                                            <td><span class="department-text">İslam Tarihi ve Sanatları</span></td>
+                                            <td><span class="room-badge">402-B</span></td>
+                                            <td>
+                                                <div class="contact-links">
+                                                    <a href="tel:+902125550402" class="contact-link">
+                                                        <i class="bi bi-telephone"></i>
+                                                    </a>
+                                                    <a href="mailto:a.koc@uni.edu.tr" class="contact-link">
+                                                        <i class="bi bi-envelope"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="academic-row">
+                                            <td>
+                                                <div class="academic-profile">
+                                                    <img src="/placeholder.svg?height=40&width=40" alt="Dr. Öğr. Üyesi Mustafa Özkan" class="profile-img">
+                                                    <div class="profile-info">
+                                                        <h6 class="profile-name">Mustafa Özkan</h6>
+                                                        <small class="profile-role">Araştırma Görevlisi</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge modern-badge info">Dr. Öğr. Üyesi</span></td>
+                                            <td><span class="department-text">Felsefe ve Din Bilimleri</span></td>
+                                            <td><span class="room-badge">403-C</span></td>
+                                            <td>
+                                                <div class="contact-links">
+                                                    <a href="tel:+902125550403" class="contact-link">
+                                                        <i class="bi bi-telephone"></i>
+                                                    </a>
+                                                    <a href="mailto:m.ozkan@uni.edu.tr" class="contact-link">
+                                                        <i class="bi bi-envelope"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- Mobile Cards View -->
+                            <div class="mobile-cards mobile-view">
+                                <div class="mobile-academic-card">
+                                    <div class="mobile-card-header">
+                                        <img src="/placeholder.svg?height=60&width=60" alt="Prof. Dr. İbrahim Yıldırım" class="mobile-profile-img">
+                                        <div class="mobile-profile-info">
+                                            <h6 class="mobile-name">İbrahim Yıldırım</h6>
+                                            <span class="badge modern-badge primary mb-2">Prof. Dr.</span>
+                                            <p class="mobile-role">Fakülte Dekanı</p>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-card-body">
+                                        <div class="mobile-info-grid">
+                                            <div class="info-item">
+                                                <i class="bi bi-building"></i>
+                                                <span>Temel İslam Bilimleri</span>
+                                            </div>
+                                            <div class="info-item">
+                                                <i class="bi bi-door-open"></i>
+                                                <span>401-A</span>
+                                            </div>
+                                        </div>
+                                        <div class="mobile-contact-actions">
+                                            <a href="tel:+902125550401" class="contact-btn phone">
+                                                <i class="bi bi-telephone"></i>
+                                                <span>Ara</span>
+                                            </a>
+                                            <a href="mailto:i.yildirim@uni.edu.tr" class="contact-btn email">
+                                                <i class="bi bi-envelope"></i>
+                                                <span>Mail</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mobile-academic-card">
+                                    <div class="mobile-card-header">
+                                        <img src="/placeholder.svg?height=60&width=60" alt="Doç. Dr. Ayşe Nur Koç" class="mobile-profile-img">
+                                        <div class="mobile-profile-info">
+                                            <h6 class="mobile-name">Ayşe Nur Koç</h6>
+                                            <span class="badge modern-badge success mb-2">Doç. Dr.</span>
+                                            <p class="mobile-role">Bölüm Başkanı</p>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-card-body">
+                                        <div class="mobile-info-grid">
+                                            <div class="info-item">
+                                                <i class="bi bi-building"></i>
+                                                <span>İslam Tarihi ve Sanatları</span>
+                                            </div>
+                                            <div class="info-item">
+                                                <i class="bi bi-door-open"></i>
+                                                <span>402-B</span>
+                                            </div>
+                                        </div>
+                                        <div class="mobile-contact-actions">
+                                            <a href="tel:+902125550402" class="contact-btn phone">
+                                                <i class="bi bi-telephone"></i>
+                                                <span>Ara</span>
+                                            </a>
+                                            <a href="mailto:a.koc@uni.edu.tr" class="contact-btn email">
+                                                <i class="bi bi-envelope"></i>
+                                                <span>Mail</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mobile-academic-card">
+                                    <div class="mobile-card-header">
+                                        <img src="/placeholder.svg?height=60&width=60" alt="Dr. Öğr. Üyesi Mustafa Özkan" class="mobile-profile-img">
+                                        <div class="mobile-profile-info">
+                                            <h6 class="mobile-name">Mustafa Özkan</h6>
+                                            <span class="badge modern-badge info mb-2">Dr. Öğr. Üyesi</span>
+                                            <p class="mobile-role">Araştırma Görevlisi</p>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-card-body">
+                                        <div class="mobile-info-grid">
+                                            <div class="info-item">
+                                                <i class="bi bi-building"></i>
+                                                <span>Felsefe ve Din Bilimleri</span>
+                                            </div>
+                                            <div class="info-item">
+                                                <i class="bi bi-door-open"></i>
+                                                <span>403-C</span>
+                                            </div>
+                                        </div>
+                                        <div class="mobile-contact-actions">
+                                            <a href="tel:+902125550403" class="contact-btn phone">
+                                                <i class="bi bi-telephone"></i>
+                                                <span>Ara</span>
+                                            </a>
+                                            <a href="mailto:m.ozkan@uni.edu.tr" class="contact-btn email">
+                                                <i class="bi bi-envelope"></i>
+                                                <span>Mail</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mühendislik Fakültesi -->
+                <div class="accordion-item faculty-card">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed modern-accordion-btn" type="button" 
+                                data-bs-toggle="collapse" data-bs-target="#collapseMuhendislik" 
+                                aria-expanded="false" aria-controls="collapseMuhendislik">
+                            <div class="faculty-icon engineering">
+                                <i class="bi bi-gear-fill"></i>
+                            </div>
+                            <div class="faculty-info">
+                                <span class="faculty-name">Mühendislik Fakültesi</span>
+                                <small class="faculty-count">3 Akademisyen • Tıklayın</small>
+                            </div>
+                            <div class="expand-indicator">
+                                <i class="bi bi-chevron-down"></i>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapseMuhendislik" class="accordion-collapse collapse" data-bs-parent="#facultyAccordion">
+                        <div class="accordion-body p-0">
+                            <!-- Desktop Table View -->
+                            <div class="table-responsive desktop-view">
+                                <table class="table modern-table mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th>Akademisyen</th>
+                                            <th>Unvan</th>
+                                            <th>Bölüm</th>
+                                            <th>Oda</th>
+                                            <th>İletişim</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="academic-row">
+                                            <td>
+                                                <div class="academic-profile">
+                                                    <img src="/placeholder.svg?height=40&width=40" alt="Dr. Cem Demir" class="profile-img">
+                                                    <div class="profile-info">
+                                                        <h6 class="profile-name">Cem Demir</h6>
+                                                        <small class="profile-role">Yazılım Uzmanı</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge modern-badge info">Dr.</span></td>
+                                            <td><span class="department-text">Bilgisayar Mühendisliği</span></td>
+                                            <td><span class="room-badge">104-A</span></td>
+                                            <td>
+                                                <div class="contact-links">
+                                                    <a href="tel:+902125550104" class="contact-link">
+                                                        <i class="bi bi-telephone"></i>
+                                                    </a>
+                                                    <a href="mailto:c.demir@uni.edu.tr" class="contact-link">
+                                                        <i class="bi bi-envelope"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="academic-row">
+                                            <td>
+                                                <div class="academic-profile">
+                                                    <img src="/placeholder.svg?height=40&width=40" alt="Prof. Dr. Elif Özkan" class="profile-img">
+                                                    <div class="profile-info">
+                                                        <h6 class="profile-name">Elif Özkan</h6>
+                                                        <small class="profile-role">Dekan Yardımcısı</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge modern-badge primary">Prof. Dr.</span></td>
+                                            <td><span class="department-text">Elektrik-Elektronik Müh.</span></td>
+                                            <td><span class="room-badge">105-B</span></td>
+                                            <td>
+                                                <div class="contact-links">
+                                                    <a href="tel:+902125550105" class="contact-link">
+                                                        <i class="bi bi-telephone"></i>
+                                                    </a>
+                                                    <a href="mailto:e.ozkan@uni.edu.tr" class="contact-link">
+                                                        <i class="bi bi-envelope"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="academic-row">
+                                            <td>
+                                                <div class="academic-profile">
+                                                    <img src="/placeholder.svg?height=40&width=40" alt="Doç. Dr. Okan Şahin" class="profile-img">
+                                                    <div class="profile-info">
+                                                        <h6 class="profile-name">Okan Şahin</h6>
+                                                        <small class="profile-role">Bölüm Başkanı</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge modern-badge success">Doç. Dr.</span></td>
+                                            <td><span class="department-text">Makine Mühendisliği</span></td>
+                                            <td><span class="room-badge">106-C</span></td>
+                                            <td>
+                                                <div class="contact-links">
+                                                    <a href="tel:+902125550106" class="contact-link">
+                                                        <i class="bi bi-telephone"></i>
+                                                    </a>
+                                                    <a href="mailto:o.sahin@uni.edu.tr" class="contact-link">
+                                                        <i class="bi bi-envelope"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- Mobile Cards View -->
+                            <div class="mobile-cards mobile-view">
+                                <div class="mobile-academic-card">
+                                    <div class="mobile-card-header">
+                                        <img src="/placeholder.svg?height=60&width=60" alt="Dr. Cem Demir" class="mobile-profile-img">
+                                        <div class="mobile-profile-info">
+                                            <h6 class="mobile-name">Cem Demir</h6>
+                                            <span class="badge modern-badge info mb-2">Dr.</span>
+                                            <p class="mobile-role">Yazılım Uzmanı</p>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-card-body">
+                                        <div class="mobile-info-grid">
+                                            <div class="info-item">
+                                                <i class="bi bi-building"></i>
+                                                <span>Bilgisayar Mühendisliği</span>
+                                            </div>
+                                            <div class="info-item">
+                                                <i class="bi bi-door-open"></i>
+                                                <span>104-A</span>
+                                            </div>
+                                        </div>
+                                        <div class="mobile-contact-actions">
+                                            <a href="tel:+902125550104" class="contact-btn phone">
+                                                <i class="bi bi-telephone"></i>
+                                                <span>Ara</span>
+                                            </a>
+                                            <a href="mailto:c.demir@uni.edu.tr" class="contact-btn email">
+                                                <i class="bi bi-envelope"></i>
+                                                <span>Mail</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mobile-academic-card">
+                                    <div class="mobile-card-header">
+                                        <img src="/placeholder.svg?height=60&width=60" alt="Prof. Dr. Elif Özkan" class="mobile-profile-img">
+                                        <div class="mobile-profile-info">
+                                            <h6 class="mobile-name">Elif Özkan</h6>
+                                            <span class="badge modern-badge primary mb-2">Prof. Dr.</span>
+                                            <p class="mobile-role">Dekan Yardımcısı</p>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-card-body">
+                                        <div class="mobile-info-grid">
+                                            <div class="info-item">
+                                                <i class="bi bi-building"></i>
+                                                <span>Elektrik-Elektronik Müh.</span>
+                                            </div>
+                                            <div class="info-item">
+                                                <i class="bi bi-door-open"></i>
+                                                <span>105-B</span>
+                                            </div>
+                                        </div>
+                                        <div class="mobile-contact-actions">
+                                            <a href="tel:+902125550105" class="contact-btn phone">
+                                                <i class="bi bi-telephone"></i>
+                                                <span>Ara</span>
+                                            </a>
+                                            <a href="mailto:e.ozkan@uni.edu.tr" class="contact-btn email">
+                                                <i class="bi bi-envelope"></i>
+                                                <span>Mail</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mobile-academic-card">
+                                    <div class="mobile-card-header">
+                                        <img src="/placeholder.svg?height=60&width=60" alt="Doç. Dr. Okan Şahin" class="mobile-profile-img">
+                                        <div class="mobile-profile-info">
+                                            <h6 class="mobile-name">Okan Şahin</h6>
+                                            <span class="badge modern-badge success mb-2">Doç. Dr.</span>
+                                            <p class="mobile-role">Bölüm Başkanı</p>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-card-body">
+                                        <div class="mobile-info-grid">
+                                            <div class="info-item">
+                                                <i class="bi bi-building"></i>
+                                                <span>Makine Mühendisliği</span>
+                                            </div>
+                                            <div class="info-item">
+                                                <i class="bi bi-door-open"></i>
+                                                <span>106-C</span>
+                                            </div>
+                                        </div>
+                                        <div class="mobile-contact-actions">
+                                            <a href="tel:+902125550106" class="contact-btn phone">
+                                                <i class="bi bi-telephone"></i>
+                                                <span>Ara</span>
+                                            </a>
+                                            <a href="mailto:o.sahin@uni.edu.tr" class="contact-btn email">
+                                                <i class="bi bi-envelope"></i>
+                                                <span>Mail</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sağlık Bilimleri Fakültesi -->
+                <div class="accordion-item faculty-card">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed modern-accordion-btn" type="button" 
+                                data-bs-toggle="collapse" data-bs-target="#collapseSaglik" 
+                                aria-expanded="false" aria-controls="collapseSaglik">
+                            <div class="faculty-icon health">
+                                <i class="bi bi-heart-pulse-fill"></i>
+                            </div>
+                            <div class="faculty-info">
+                                <span class="faculty-name">Sağlık Bilimleri Fakültesi</span>
+                                <small class="faculty-count">3 Akademisyen • Tıklayın</small>
+                            </div>
+                            <div class="expand-indicator">
+                                <i class="bi bi-chevron-down"></i>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapseSaglik" class="accordion-collapse collapse" data-bs-parent="#facultyAccordion">
+                        <div class="accordion-body p-0">
+                            <!-- Desktop Table View -->
+                            <div class="table-responsive desktop-view">
+                                <table class="table modern-table mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th>Akademisyen</th>
+                                            <th>Unvan</th>
+                                            <th>Bölüm</th>
+                                            <th>Oda</th>
+                                            <th>İletişim</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="academic-row">
+                                            <td>
+                                                <div class="academic-profile">
+                                                    <img src="/placeholder.svg?height=40&width=40" alt="Prof. Dr. Ayşe Çelik" class="profile-img">
+                                                    <div class="profile-info">
+                                                        <h6 class="profile-name">Ayşe Çelik</h6>
+                                                        <small class="profile-role">Fakülte Dekanı</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge modern-badge primary">Prof. Dr.</span></td>
+                                            <td><span class="department-text">Hemşirelik</span></td>
+                                            <td><span class="room-badge">201-A</span></td>
+                                            <td>
+                                                <div class="contact-links">
+                                                    <a href="tel:+902125550201" class="contact-link">
+                                                        <i class="bi bi-telephone"></i>
+                                                    </a>
+                                                    <a href="mailto:a.celik@uni.edu.tr" class="contact-link">
+                                                        <i class="bi bi-envelope"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="academic-row">
+                                            <td>
+                                                <div class="academic-profile">
+                                                    <img src="/placeholder.svg?height=40&width=40" alt="Doç. Dr. Murat Aydın" class="profile-img">
+                                                    <div class="profile-info">
+                                                        <h6 class="profile-name">Murat Aydın</h6>
+                                                        <small class="profile-role">Bölüm Başkanı</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge modern-badge success">Doç. Dr.</span></td>
+                                            <td><span class="department-text">Fizyoterapi</span></td>
+                                            <td><span class="room-badge">202-B</span></td>
+                                            <td>
+                                                <div class="contact-links">
+                                                    <a href="tel:+902125550202" class="contact-link">
+                                                        <i class="bi bi-telephone"></i>
+                                                    </a>
+                                                    <a href="mailto:m.aydin@uni.edu.tr" class="contact-link">
+                                                        <i class="bi bi-envelope"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="academic-row">
+                                            <td>
+                                                <div class="academic-profile">
+                                                    <img src="/placeholder.svg?height=40&width=40" alt="Dr. Öğr. Üyesi Zeynep Koç" class="profile-img">
+                                                    <div class="profile-info">
+                                                        <h6 class="profile-name">Zeynep Koç</h6>
+                                                        <small class="profile-role">Araştırma Görevlisi</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge modern-badge info">Dr. Öğr. Üyesi</span></td>
+                                            <td><span class="department-text">Beslenme ve Diyetetik</span></td>
+                                            <td><span class="room-badge">203-C</span></td>
+                                            <td>
+                                                <div class="contact-links">
+                                                    <a href="tel:+902125550203" class="contact-link">
+                                                        <i class="bi bi-telephone"></i>
+                                                    </a>
+                                                    <a href="mailto:z.koc@uni.edu.tr" class="contact-link">
+                                                        <i class="bi bi-envelope"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- Mobile Cards View -->
+                            <div class="mobile-cards mobile-view">
+                                <div class="mobile-academic-card">
+                                    <div class="mobile-card-header">
+                                        <img src="/placeholder.svg?height=60&width=60" alt="Prof. Dr. Ayşe Çelik" class="mobile-profile-img">
+                                        <div class="mobile-profile-info">
+                                            <h6 class="mobile-name">Ayşe Çelik</h6>
+                                            <span class="badge modern-badge primary mb-2">Prof. Dr.</span>
+                                            <p class="mobile-role">Fakülte Dekanı</p>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-card-body">
+                                        <div class="mobile-info-grid">
+                                            <div class="info-item">
+                                                <i class="bi bi-building"></i>
+                                                <span>Hemşirelik</span>
+                                            </div>
+                                            <div class="info-item">
+                                                <i class="bi bi-door-open"></i>
+                                                <span>201-A</span>
+                                            </div>
+                                        </div>
+                                        <div class="mobile-contact-actions">
+                                            <a href="tel:+902125550201" class="contact-btn phone">
+                                                <i class="bi bi-telephone"></i>
+                                                <span>Ara</span>
+                                            </a>
+                                            <a href="mailto:a.celik@uni.edu.tr" class="contact-btn email">
+                                                <i class="bi bi-envelope"></i>
+                                                <span>Mail</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mobile-academic-card">
+                                    <div class="mobile-card-header">
+                                        <img src="/placeholder.svg?height=60&width=60" alt="Doç. Dr. Murat Aydın" class="mobile-profile-img">
+                                        <div class="mobile-profile-info">
+                                            <h6 class="mobile-name">Murat Aydın</h6>
+                                            <span class="badge modern-badge success mb-2">Doç. Dr.</span>
+                                            <p class="mobile-role">Bölüm Başkanı</p>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-card-body">
+                                        <div class="mobile-info-grid">
+                                            <div class="info-item">
+                                                <i class="bi bi-building"></i>
+                                                <span>Fizyoterapi</span>
+                                            </div>
+                                            <div class="info-item">
+                                                <i class="bi bi-door-open"></i>
+                                                <span>202-B</span>
+                                            </div>
+                                        </div>
+                                        <div class="mobile-contact-actions">
+                                            <a href="tel:+902125550202" class="contact-btn phone">
+                                                <i class="bi bi-telephone"></i>
+                                                <span>Ara</span>
+                                            </a>
+                                            <a href="mailto:m.aydin@uni.edu.tr" class="contact-btn email">
+                                                <i class="bi bi-envelope"></i>
+                                                <span>Mail</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mobile-academic-card">
+                                    <div class="mobile-card-header">
+                                        <img src="/placeholder.svg?height=60&width=60" alt="Dr. Öğr. Üyesi Zeynep Koç" class="mobile-profile-img">
+                                        <div class="mobile-profile-info">
+                                            <h6 class="mobile-name">Zeynep Koç</h6>
+                                            <span class="badge modern-badge info mb-2">Dr. Öğr. Üyesi</span>
+                                            <p class="mobile-role">Araştırma Görevlisi</p>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-card-body">
+                                        <div class="mobile-info-grid">
+                                            <div class="info-item">
+                                                <i class="bi bi-building"></i>
+                                                <span>Beslenme ve Diyetetik</span>
+                                            </div>
+                                            <div class="info-item">
+                                                <i class="bi bi-door-open"></i>
+                                                <span>203-C</span>
+                                            </div>
+                                        </div>
+                                        <div class="mobile-contact-actions">
+                                            <a href="tel:+902125550203" class="contact-btn phone">
+                                                <i class="bi bi-telephone"></i>
+                                                <span>Ara</span>
+                                            </a>
+                                            <a href="mailto:z.koc@uni.edu.tr" class="contact-btn email">
+                                                <i class="bi bi-envelope"></i>
+                                                <span>Mail</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Spor Bilimleri Fakültesi -->
+                <div class="accordion-item faculty-card">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed modern-accordion-btn" type="button" 
+                                data-bs-toggle="collapse" data-bs-target="#collapseSpor" 
+                                aria-expanded="false" aria-controls="collapseSpor">
+                            <div class="faculty-icon health">
+                                <i class="bi bi-trophy-fill"></i>
+                            </div>
+                            <div class="faculty-info">
+                                <span class="faculty-name">Spor Bilimleri Fakültesi</span>
+                                <small class="faculty-count">3 Akademisyen • Tıklayın</small>
+                            </div>
+                            <div class="expand-indicator">
+                                <i class="bi bi-chevron-down"></i>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapseSpor" class="accordion-collapse collapse" data-bs-parent="#facultyAccordion">
+                        <div class="accordion-body p-0">
+                            <!-- Desktop Table View -->
+                            <div class="table-responsive desktop-view">
+                                <table class="table modern-table mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th>Akademisyen</th>
+                                            <th>Unvan</th>
+                                            <th>Bölüm</th>
+                                            <th>Oda</th>
+                                            <th>İletişim</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="academic-row">
+                                            <td>
+                                                <div class="academic-profile">
+                                                    <img src="/placeholder.svg?height=40&width=40" alt="Prof. Dr. Serkan Aktaş" class="profile-img">
+                                                    <div class="profile-info">
+                                                        <h6 class="profile-name">Serkan Aktaş</h6>
+                                                        <small class="profile-role">Fakülte Dekanı</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge modern-badge primary">Prof. Dr.</span></td>
+                                            <td><span class="department-text">Beden Eğitimi ve Spor</span></td>
+                                            <td><span class="room-badge">501-A</span></td>
+                                            <td>
+                                                <div class="contact-links">
+                                                    <a href="tel:+902125550501" class="contact-link">
+                                                        <i class="bi bi-telephone"></i>
+                                                    </a>
+                                                    <a href="mailto:s.aktas@uni.edu.tr" class="contact-link">
+                                                        <i class="bi bi-envelope"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="academic-row">
+                                            <td>
+                                                <div class="academic-profile">
+                                                    <img src="/placeholder.svg?height=40&width=40" alt="Doç. Dr. Elif Karaca" class="profile-img">
+                                                    <div class="profile-info">
+                                                        <h6 class="profile-name">Elif Karaca</h6>
+                                                        <small class="profile-role">Bölüm Başkanı</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge modern-badge success">Doç. Dr.</span></td>
+                                            <td><span class="department-text">Spor Yöneticiliği</span></td>
+                                            <td><span class="room-badge">502-B</span></td>
+                                            <td>
+                                                <div class="contact-links">
+                                                    <a href="tel:+902125550502" class="contact-link">
+                                                        <i class="bi bi-telephone"></i>
+                                                    </a>
+                                                    <a href="mailto:e.karaca@uni.edu.tr" class="contact-link">
+                                                        <i class="bi bi-envelope"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="academic-row">
+                                            <td>
+                                                <div class="academic-profile">
+                                                    <img src="/placeholder.svg?height=40&width=40" alt="Dr. Öğr. Üyesi Burak Yılmaz" class="profile-img">
+                                                    <div class="profile-info">
+                                                        <h6 class="profile-name">Burak Yılmaz</h6>
+                                                        <small class="profile-role">Antrenör</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge modern-badge info">Dr. Öğr. Üyesi</span></td>
+                                            <td><span class="department-text">Antrenörlük Eğitimi</span></td>
+                                            <td><span class="room-badge">503-C</span></td>
+                                            <td>
+                                                <div class="contact-links">
+                                                    <a href="tel:+902125550503" class="contact-link">
+                                                        <i class="bi bi-telephone"></i>
+                                                    </a>
+                                                    <a href="mailto:b.yilmaz@uni.edu.tr" class="contact-link">
+                                                        <i class="bi bi-envelope"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- Mobile Cards View -->
+                            <div class="mobile-cards mobile-view">
+                                <div class="mobile-academic-card">
+                                    <div class="mobile-card-header">
+                                        <img src="/placeholder.svg?height=60&width=60" alt="Prof. Dr. Serkan Aktaş" class="mobile-profile-img">
+                                        <div class="mobile-profile-info">
+                                            <h6 class="mobile-name">Serkan Aktaş</h6>
+                                            <span class="badge modern-badge primary mb-2">Prof. Dr.</span>
+                                            <p class="mobile-role">Fakülte Dekanı</p>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-card-body">
+                                        <div class="mobile-info-grid">
+                                            <div class="info-item">
+                                                <i class="bi bi-building"></i>
+                                                <span>Beden Eğitimi ve Spor</span>
+                                            </div>
+                                            <div class="info-item">
+                                                <i class="bi bi-door-open"></i>
+                                                <span>501-A</span>
+                                            </div>
+                                        </div>
+                                        <div class="mobile-contact-actions">
+                                            <a href="tel:+902125550501" class="contact-btn phone">
+                                                <i class="bi bi-telephone"></i>
+                                                <span>Ara</span>
+                                            </a>
+                                            <a href="mailto:s.aktas@uni.edu.tr" class="contact-btn email">
+                                                <i class="bi bi-envelope"></i>
+                                                <span>Mail</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mobile-academic-card">
+                                    <div class="mobile-card-header">
+                                        <img src="/placeholder.svg?height=60&width=60" alt="Doç. Dr. Elif Karaca" class="mobile-profile-img">
+                                        <div class="mobile-profile-info">
+                                            <h6 class="mobile-name">Elif Karaca</h6>
+                                            <span class="badge modern-badge success mb-2">Doç. Dr.</span>
+                                            <p class="mobile-role">Bölüm Başkanı</p>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-card-body">
+                                        <div class="mobile-info-grid">
+                                            <div class="info-item">
+                                                <i class="bi bi-building"></i>
+                                                <span>Spor Yöneticiliği</span>
+                                            </div>
+                                            <div class="info-item">
+                                                <i class="bi bi-door-open"></i>
+                                                <span>502-B</span>
+                                            </div>
+                                        </div>
+                                        <div class="mobile-contact-actions">
+                                            <a href="tel:+902125550502" class="contact-btn phone">
+                                                <i class="bi bi-telephone"></i>
+                                                <span>Ara</span>
+                                            </a>
+                                            <a href="mailto:e.karaca@uni.edu.tr" class="contact-btn email">
+                                                <i class="bi bi-envelope"></i>
+                                                <span>Mail</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mobile-academic-card">
+                                    <div class="mobile-card-header">
+                                        <img src="/placeholder.svg?height=60&width=60" alt="Dr. Öğr. Üyesi Burak Yılmaz" class="mobile-profile-img">
+                                        <div class="mobile-profile-info">
+                                            <h6 class="mobile-name">Burak Yılmaz</h6>
+                                            <span class="badge modern-badge info mb-2">Dr. Öğr. Üyesi</span>
+                                            <p class="mobile-role">Antrenör</p>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-card-body">
+                                        <div class="mobile-info-grid">
+                                            <div class="info-item">
+                                                <i class="bi bi-building"></i>
+                                                <span>Antrenörlük Eğitimi</span>
+                                            </div>
+                                            <div class="info-item">
+                                                <i class="bi bi-door-open"></i>
+                                                <span>503-C</span>
+                                            </div>
+                                        </div>
+                                        <div class="mobile-contact-actions">
+                                            <a href="tel:+902125550503" class="contact-btn phone">
+                                                <i class="bi bi-telephone"></i>
+                                                <span>Ara</span>
+                                            </a>
+                                            <a href="mailto:b.yilmaz@uni.edu.tr" class="contact-btn email">
+                                                <i class="bi bi-envelope"></i>
+                                                <span>Mail</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Enstitüler Section -->
+            <div class="content-header text-center mb-5 mt-5">
+                <h2 class="section-title">Enstitülerimiz</h2>
+                <p class="section-subtitle">Lisansüstü eğitim ve araştırma merkezlerimiz</p>
+            </div>
+
+            <div class="accordion modern-accordion" id="instituteAccordion">
+                <!-- Lisansüstü Eğitim Enstitüsü -->
+                <div class="accordion-item faculty-card">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed modern-accordion-btn" type="button" 
+                                data-bs-toggle="collapse" data-bs-target="#collapseLisansustu" 
+                                aria-expanded="false" aria-controls="collapseLisansustu">
+                            <div class="faculty-icon literature">
+                                <i class="bi bi-mortarboard"></i>
+                            </div>
+                            <div class="faculty-info">
+                                <span class="faculty-name">Lisansüstü Eğitim Enstitüsü</span>
+                                <small class="faculty-count">2 Akademisyen • Tıklayın</small>
+                            </div>
+                            <div class="expand-indicator">
+                                <i class="bi bi-chevron-down"></i>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapseLisansustu" class="accordion-collapse collapse" data-bs-parent="#instituteAccordion">
+                        <div class="accordion-body p-0">
+                            <!-- Desktop Table View -->
+                            <div class="table-responsive desktop-view">
+                                <table class="table modern-table mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th>Akademisyen</th>
+                                            <th>Unvan</th>
+                                            <th>Bölüm</th>
+                                            <th>Oda</th>
+                                            <th>İletişim</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="academic-row">
+                                            <td>
+                                                <div class="academic-profile">
+                                                    <img src="/placeholder.svg?height=40&width=40" alt="Prof. Dr. Necla Özdemir" class="profile-img">
+                                                    <div class="profile-info">
+                                                        <h6 class="profile-name">Necla Özdemir</h6>
+                                                        <small class="profile-role">Enstitü Müdürü</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge modern-badge primary">Prof. Dr.</span></td>
+                                            <td><span class="department-text">Lisansüstü Eğitim</span></td>
+                                            <td><span class="room-badge">601-A</span></td>
+                                            <td>
+                                                <div class="contact-links">
+                                                    <a href="tel:+902125550601" class="contact-link">
+                                                        <i class="bi bi-telephone"></i>
+                                                    </a>
+                                                    <a href="mailto:n.ozdemir@uni.edu.tr" class="contact-link">
+                                                        <i class="bi bi-envelope"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="academic-row">
+                                            <td>
+                                                <div class="academic-profile">
+                                                    <img src="/placeholder.svg?height=40&width=40" alt="Doç. Dr. Kemal Şen" class="profile-img">
+                                                    <div class="profile-info">
+                                                        <h6 class="profile-name">Kemal Şen</h6>
+                                                        <small class="profile-role">Müdür Yardımcısı</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge modern-badge success">Doç. Dr.</span></td>
+                                            <td><span class="department-text">Araştırma Koordinasyonu</span></td>
+                                            <td><span class="room-badge">602-B</span></td>
+                                            <td>
+                                                <div class="contact-links">
+                                                    <a href="tel:+902125550602" class="contact-link">
+                                                        <i class="bi bi-telephone"></i>
+                                                    </a>
+                                                    <a href="mailto:k.sen@uni.edu.tr" class="contact-link">
+                                                        <i class="bi bi-envelope"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- Mobile Cards View -->
+                            <div class="mobile-cards mobile-view">
+                                <div class="mobile-academic-card">
+                                    <div class="mobile-card-header">
+                                        <img src="/placeholder.svg?height=60&width=60" alt="Prof. Dr. Necla Özdemir" class="mobile-profile-img">
+                                        <div class="mobile-profile-info">
+                                            <h6 class="mobile-name">Necla Özdemir</h6>
+                                            <span class="badge modern-badge primary mb-2">Prof. Dr.</span>
+                                            <p class="mobile-role">Enstitü Müdürü</p>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-card-body">
+                                        <div class="mobile-info-grid">
+                                            <div class="info-item">
+                                                <i class="bi bi-building"></i>
+                                                <span>Lisansüstü Eğitim</span>
+                                            </div>
+                                            <div class="info-item">
+                                                <i class="bi bi-door-open"></i>
+                                                <span>601-A</span>
+                                            </div>
+                                        </div>
+                                        <div class="mobile-contact-actions">
+                                            <a href="tel:+902125550601" class="contact-btn phone">
+                                                <i class="bi bi-telephone"></i>
+                                                <span>Ara</span>
+                                            </a>
+                                            <a href="mailto:n.ozdemir@uni.edu.tr" class="contact-btn email">
+                                                <i class="bi bi-envelope"></i>
+                                                <span>Mail</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mobile-academic-card">
+                                    <div class="mobile-card-header">
+                                        <img src="/placeholder.svg?height=60&width=60" alt="Doç. Dr. Kemal Şen" class="mobile-profile-img">
+                                        <div class="mobile-profile-info">
+                                            <h6 class="mobile-name">Kemal Şen</h6>
+                                            <span class="badge modern-badge success mb-2">Doç. Dr.</span>
+                                            <p class="mobile-role">Müdür Yardımcısı</p>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-card-body">
+                                        <div class="mobile-info-grid">
+                                            <div class="info-item">
+                                                <i class="bi bi-building"></i>
+                                                <span>Araştırma Koordinasyonu</span>
+                                            </div>
+                                            <div class="info-item">
+                                                <i class="bi bi-door-open"></i>
+                                                <span>602-B</span>
+                                            </div>
+                                        </div>
+                                        <div class="mobile-contact-actions">
+                                            <a href="tel:+902125550602" class="contact-btn phone">
+                                                <i class="bi bi-telephone"></i>
+                                                <span>Ara</span>
+                                            </a>
+                                            <a href="mailto:k.sen@uni.edu.tr" class="contact-btn email">
+                                                <i class="bi bi-envelope"></i>
+                                                <span>Mail</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Yüksekokullar Section -->
+            <div class="content-header text-center mb-5 mt-5">
+                <h2 class="section-title">Yüksekokullarımız</h2>
+                <p class="section-subtitle">Özel eğitim programları sunan yüksekokullarımız</p>
+            </div>
+
+            <div class="accordion modern-accordion" id="schoolAccordion">
+                <!-- Beden Eğitimi ve Spor Yüksekokulu -->
+                <div class="accordion-item faculty-card">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed modern-accordion-btn" type="button" 
+                                data-bs-toggle="collapse" data-bs-target="#collapseBedenEgitimi" 
+                                aria-expanded="false" aria-controls="collapseBedenEgitimi">
+                            <div class="faculty-icon health">
+                                <i class="bi bi-person-arms-up"></i>
+                            </div>
+                            <div class="faculty-info">
+                                <span class="faculty-name">Beden Eğitimi ve Spor Yüksekokulu</span>
+                                <small class="faculty-count">2 Akademisyen • Tıklayın</small>
+                            </div>
+                            <div class="expand-indicator">
+                                <i class="bi bi-chevron-down"></i>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapseBedenEgitimi" class="accordion-collapse collapse" data-bs-parent="#schoolAccordion">
+                        <div class="accordion-body p-0">
+                            <!-- Desktop Table View -->
+                            <div class="table-responsive desktop-view">
+                                <table class="table modern-table mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th>Akademisyen</th>
+                                            <th>Unvan</th>
+                                            <th>Bölüm</th>
+                                            <th>Oda</th>
+                                            <th>İletişim</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="academic-row">
+                                            <td>
+                                                <div class="academic-profile">
+                                                    <img src="/placeholder.svg?height=40&width=40" alt="Doç. Dr. Murat Spor" class="profile-img">
+                                                    <div class="profile-info">
+                                                        <h6 class="profile-name">Murat Spor</h6>
+                                                        <small class="profile-role">Yüksekokul Müdürü</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge modern-badge success">Doç. Dr.</span></td>
+                                            <td><span class="department-text">Beden Eğitimi</span></td>
+                                            <td><span class="room-badge">701-A</span></td>
+                                            <td>
+                                                <div class="contact-links">
+                                                    <a href="tel:+902125550701" class="contact-link">
+                                                        <i class="bi bi-telephone"></i>
+                                                    </a>
+                                                    <a href="mailto:m.spor@uni.edu.tr" class="contact-link">
+                                                        <i class="bi bi-envelope"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="academic-row">
+                                            <td>
+                                                <div class="academic-profile">
+                                                    <img src="/placeholder.svg?height=40&width=40" alt="Dr. Öğr. Üyesi Ayşe Fit" class="profile-img">
+                                                    <div class="profile-info">
+                                                        <h6 class="profile-name">Ayşe Fit</h6>
+                                                        <small class="profile-role">Öğretim Üyesi</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge modern-badge info">Dr. Öğr. Üyesi</span></td>
+                                            <td><span class="department-text">Spor Bilimleri</span></td>
+                                            <td><span class="room-badge">702-B</span></td>
+                                            <td>
+                                                <div class="contact-links">
+                                                    <a href="tel:+902125550702" class="contact-link">
+                                                        <i class="bi bi-telephone"></i>
+                                                    </a>
+                                                    <a href="mailto:a.fit@uni.edu.tr" class="contact-link">
+                                                        <i class="bi bi-envelope"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- Mobile Cards View -->
+                            <div class="mobile-cards mobile-view">
+                                <div class="mobile-academic-card">
+                                    <div class="mobile-card-header">
+                                        <img src="/placeholder.svg?height=60&width=60" alt="Doç. Dr. Murat Spor" class="mobile-profile-img">
+                                        <div class="mobile-profile-info">
+                                            <h6 class="mobile-name">Murat Spor</h6>
+                                            <span class="badge modern-badge success mb-2">Doç. Dr.</span>
+                                            <p class="mobile-role">Yüksekokul Müdürü</p>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-card-body">
+                                        <div class="mobile-info-grid">
+                                            <div class="info-item">
+                                                <i class="bi bi-building"></i>
+                                                <span>Beden Eğitimi</span>
+                                            </div>
+                                            <div class="info-item">
+                                                <i class="bi bi-door-open"></i>
+                                                <span>701-A</span>
+                                            </div>
+                                        </div>
+                                        <div class="mobile-contact-actions">
+                                            <a href="tel:+902125550701" class="contact-btn phone">
+                                                <i class="bi bi-telephone"></i>
+                                                <span>Ara</span>
+                                            </a>
+                                            <a href="mailto:m.spor@uni.edu.tr" class="contact-btn email">
+                                                <i class="bi bi-envelope"></i>
+                                                <span>Mail</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mobile-academic-card">
+                                    <div class="mobile-card-header">
+                                        <img src="/placeholder.svg?height=60&width=60" alt="Dr. Öğr. Üyesi Ayşe Fit" class="mobile-profile-img">
+                                        <div class="mobile-profile-info">
+                                            <h6 class="mobile-name">Ayşe Fit</h6>
+                                            <span class="badge modern-badge info mb-2">Dr. Öğr. Üyesi</span>
+                                            <p class="mobile-role">Öğretim Üyesi</p>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-card-body">
+                                        <div class="mobile-info-grid">
+                                            <div class="info-item">
+                                                <i class="bi bi-building"></i>
+                                                <span>Spor Bilimleri</span>
+                                            </div>
+                                            <div class="info-item">
+                                                <i class="bi bi-door-open"></i>
+                                                <span>702-B</span>
+                                            </div>
+                                        </div>
+                                        <div class="mobile-contact-actions">
+                                            <a href="tel:+902125550702" class="contact-btn phone">
+                                                <i class="bi bi-telephone"></i>
+                                                <span>Ara</span>
+                                            </a>
+                                            <a href="mailto:a.fit@uni.edu.tr" class="contact-btn email">
+                                                <i class="bi bi-envelope"></i>
+                                                <span>Mail</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Turizm İşletmeciliği ve Otelcilik Yüksekokulu -->
+                <div class="accordion-item faculty-card">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed modern-accordion-btn" type="button" 
+                                data-bs-toggle="collapse" data-bs-target="#collapseTurizm" 
+                                aria-expanded="false" aria-controls="collapseTurizm">
+                            <div class="faculty-icon business">
+                                <i class="bi bi-building"></i>
+                            </div>
+                            <div class="faculty-info">
+                                <span class="faculty-name">Turizm İşletmeciliği ve Otelcilik Yüksekokulu</span>
+                                <small class="faculty-count">2 Akademisyen • Tıklayın</small>
+                            </div>
+                            <div class="expand-indicator">
+                                <i class="bi bi-chevron-down"></i>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapseTurizm" class="accordion-collapse collapse" data-bs-parent="#schoolAccordion">
+                        <div class="accordion-body p-0">
+                            <!-- Desktop Table View -->
+                            <div class="table-responsive desktop-view">
+                                <table class="table modern-table mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th>Akademisyen</th>
+                                            <th>Unvan</th>
+                                            <th>Bölüm</th>
+                                            <th>Oda</th>
+                                            <th>İletişim</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="academic-row">
+                                            <td>
+                                                <div class="academic-profile">
+                                                    <img src="/placeholder.svg?height=40&width=40" alt="Prof. Dr. Leyla Otel" class="profile-img">
+                                                    <div class="profile-info">
+                                                        <h6 class="profile-name">Leyla Otel</h6>
+                                                        <small class="profile-role">Yüksekokul Müdürü</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge modern-badge primary">Prof. Dr.</span></td>
+                                            <td><span class="department-text">Turizm İşletmeciliği</span></td>
+                                            <td><span class="room-badge">801-A</span></td>
+                                            <td>
+                                                <div class="contact-links">
+                                                    <a href="tel:+902125550801" class="contact-link">
+                                                        <i class="bi bi-telephone"></i>
+                                                    </a>
+                                                    <a href="mailto:l.otel@uni.edu.tr" class="contact-link">
+                                                        <i class="bi bi-envelope"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="academic-row">
+                                            <td>
+                                                <div class="academic-profile">
+                                                    <img src="/placeholder.svg?height=40&width=40" alt="Doç. Dr. Can Turizm" class="profile-img">
+                                                    <div class="profile-info">
+                                                        <h6 class="profile-name">Can Turizm</h6>
+                                                        <small class="profile-role">Öğretim Üyesi</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge modern-badge success">Doç. Dr.</span></td>
+                                            <td><span class="department-text">Otelcilik</span></td>
+                                            <td><span class="room-badge">802-B</span></td>
+                                            <td>
+                                                <div class="contact-links">
+                                                    <a href="tel:+902125550802" class="contact-link">
+                                                        <i class="bi bi-telephone"></i>
+                                                    </a>
+                                                    <a href="mailto:c.turizm@uni.edu.tr" class="contact-link">
+                                                        <i class="bi bi-envelope"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- Mobile Cards View -->
+                            <div class="mobile-cards mobile-view">
+                                <div class="mobile-academic-card">
+                                    <div class="mobile-card-header">
+                                        <img src="/placeholder.svg?height=60&width=60" alt="Prof. Dr. Leyla Otel" class="mobile-profile-img">
+                                        <div class="mobile-profile-info">
+                                            <h6 class="mobile-name">Leyla Otel</h6>
+                                            <span class="badge modern-badge primary mb-2">Prof. Dr.</span>
+                                            <p class="mobile-role">Yüksekokul Müdürü</p>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-card-body">
+                                        <div class="mobile-info-grid">
+                                            <div class="info-item">
+                                                <i class="bi bi-building"></i>
+                                                <span>Turizm İşletmeciliği</span>
+                                            </div>
+                                            <div class="info-item">
+                                                <i class="bi bi-door-open"></i>
+                                                <span>801-A</span>
+                                            </div>
+                                        </div>
+                                        <div class="mobile-contact-actions">
+                                            <a href="tel:+902125550801" class="contact-btn phone">
+                                                <i class="bi bi-telephone"></i>
+                                                <span>Ara</span>
+                                            </a>
+                                            <a href="mailto:l.otel@uni.edu.tr" class="contact-btn email">
+                                                <i class="bi bi-envelope"></i>
+                                                <span>Mail</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mobile-academic-card">
+                                    <div class="mobile-card-header">
+                                        <img src="/placeholder.svg?height=60&width=60" alt="Doç. Dr. Can Turizm" class="mobile-profile-img">
+                                        <div class="mobile-profile-info">
+                                            <h6 class="mobile-name">Can Turizm</h6>
+                                            <span class="badge modern-badge success mb-2">Doç. Dr.</span>
+                                            <p class="mobile-role">Öğretim Üyesi</p>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-card-body">
+                                        <div class="mobile-info-grid">
+                                            <div class="info-item">
+                                                <i class="bi bi-building"></i>
+                                                <span>Otelcilik</span>
+                                            </div>
+                                            <div class="info-item">
+                                                <i class="bi bi-door-open"></i>
+                                                <span>802-B</span>
+                                            </div>
+                                        </div>
+                                        <div class="mobile-contact-actions">
+                                            <a href="tel:+902125550802" class="contact-btn phone">
+                                                <i class="bi bi-telephone"></i>
+                                                <span>Ara</span>
+                                            </a>
+                                            <a href="mailto:c.turizm@uni.edu.tr" class="contact-btn email">
+                                                <i class="bi bi-envelope"></i>
+                                                <span>Mail</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Meslek Yüksekokulları Section -->
+            <div class="content-header text-center mb-5 mt-5">
+                <h2 class="section-title">Meslek Yüksekokullarımız</h2>
+                <p class="section-subtitle">Uygulamalı eğitim veren meslek yüksekokullarımız</p>
+            </div>
+
+            <div class="accordion modern-accordion" id="vocationalAccordion">
+                <!-- Sağlık Hizmetleri MYO -->
+                <div class="accordion-item faculty-card">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed modern-accordion-btn" type="button" 
+                                data-bs-toggle="collapse" data-bs-target="#collapseSaglikMYO" 
+                                aria-expanded="false" aria-controls="collapseSaglikMYO">
+                            <div class="faculty-icon health">
+                                <i class="bi bi-hospital"></i>
+                            </div>
+                            <div class="faculty-info">
+                                <span class="faculty-name">Sağlık Hizmetleri MYO</span>
+                                <small class="faculty-count">2 Akademisyen • Tıklayın</small>
+                            </div>
+                            <div class="expand-indicator">
+                                <i class="bi bi-chevron-down"></i>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapseSaglikMYO" class="accordion-collapse collapse" data-bs-parent="#vocationalAccordion">
+                        <div class="accordion-body p-0">
+                            <!-- Desktop Table View -->
+                            <div class="table-responsive desktop-view">
+                                <table class="table modern-table mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th>Akademisyen</th>
+                                            <th>Unvan</th>
+                                            <th>Bölüm</th>
+                                            <th>Oda</th>
+                                            <th>İletişim</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="academic-row">
+                                            <td>
+                                                <div class="academic-profile">
+                                                    <img src="/placeholder.svg?height=40&width=40" alt="Doç. Dr. Sema Sağlık" class="profile-img">
+                                                    <div class="profile-info">
+                                                        <h6 class="profile-name">Sema Sağlık</h6>
+                                                        <small class="profile-role">MYO Müdürü</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge modern-badge success">Doç. Dr.</span></td>
+                                            <td><span class="department-text">Tıbbi Sekreterlik</span></td>
+                                            <td><span class="room-badge">901-A</span></td>
+                                            <td>
+                                                <div class="contact-links">
+                                                    <a href="tel:+902125550901" class="contact-link">
+                                                        <i class="bi bi-telephone"></i>
+                                                    </a>
+                                                    <a href="mailto:s.saglik@uni.edu.tr" class="contact-link">
+                                                        <i class="bi bi-envelope"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="academic-row">
+                                            <td>
+                                                <div class="academic-profile">
+                                                    <img src="/placeholder.svg?height=40&width=40" alt="Öğr. Gör. Ahmet Teknik" class="profile-img">
+                                                    <div class="profile-info">
+                                                        <h6 class="profile-name">Ahmet Teknik</h6>
+                                                        <small class="profile-role">Öğretim Görevlisi</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge modern-badge warning">Öğr. Gör.</span></td>
+                                            <td><span class="department-text">Tıbbi Görüntüleme</span></td>
+                                            <td><span class="room-badge">902-B</span></td>
+                                            <td>
+                                                <div class="contact-links">
+                                                    <a href="tel:+902125550902" class="contact-link">
+                                                        <i class="bi bi-telephone"></i>
+                                                    </a>
+                                                    <a href="mailto:a.teknik@uni.edu.tr" class="contact-link">
+                                                        <i class="bi bi-envelope"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- Mobile Cards View -->
+                            <div class="mobile-cards mobile-view">
+                                <div class="mobile-academic-card">
+                                    <div class="mobile-card-header">
+                                        <img src="/placeholder.svg?height=60&width=60" alt="Doç. Dr. Sema Sağlık" class="mobile-profile-img">
+                                        <div class="mobile-profile-info">
+                                            <h6 class="mobile-name">Sema Sağlık</h6>
+                                            <span class="badge modern-badge success mb-2">Doç. Dr.</span>
+                                            <p class="mobile-role">MYO Müdürü</p>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-card-body">
+                                        <div class="mobile-info-grid">
+                                            <div class="info-item">
+                                                <i class="bi bi-building"></i>
+                                                <span>Tıbbi Sekreterlik</span>
+                                            </div>
+                                            <div class="info-item">
+                                                <i class="bi bi-door-open"></i>
+                                                <span>901-A</span>
+                                            </div>
+                                        </div>
+                                        <div class="mobile-contact-actions">
+                                            <a href="tel:+902125550901" class="contact-btn phone">
+                                                <i class="bi bi-telephone"></i>
+                                                <span>Ara</span>
+                                            </a>
+                                            <a href="mailto:s.saglik@uni.edu.tr" class="contact-btn email">
+                                                <i class="bi bi-envelope"></i>
+                                                <span>Mail</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mobile-academic-card">
+                                    <div class="mobile-card-header">
+                                        <img src="/placeholder.svg?height=60&width=60" alt="Öğr. Gör. Ahmet Teknik" class="mobile-profile-img">
+                                        <div class="mobile-profile-info">
+                                            <h6 class="mobile-name">Ahmet Teknik</h6>
+                                            <span class="badge modern-badge warning mb-2">Öğr. Gör.</span>
+                                            <p class="mobile-role">Öğretim Görevlisi</p>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-card-body">
+                                        <div class="mobile-info-grid">
+                                            <div class="info-item">
+                                                <i class="bi bi-building"></i>
+                                                <span>Tıbbi Görüntüleme</span>
+                                            </div>
+                                            <div class="info-item">
+                                                <i class="bi bi-door-open"></i>
+                                                <span>902-B</span>
+                                            </div>
+                                        </div>
+                                        <div class="mobile-contact-actions">
+                                            <a href="tel:+902125550902" class="contact-btn phone">
+                                                <i class="bi bi-telephone"></i>
+                                                <span>Ara</span>
+                                            </a>
+                                            <a href="mailto:a.teknik@uni.edu.tr" class="contact-btn email">
+                                                <i class="bi bi-envelope"></i>
+                                                <span>Mail</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sosyal Bilimler MYO -->
+                <div class="accordion-item faculty-card">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed modern-accordion-btn" type="button" 
+                                data-bs-toggle="collapse" data-bs-target="#collapseSosyalMYO" 
+                                aria-expanded="false" aria-controls="collapseSosyalMYO">
+                            <div class="faculty-icon literature">
+                                <i class="bi bi-people-fill"></i>
+                            </div>
+                            <div class="faculty-info">
+                                <span class="faculty-name">Sosyal Bilimler MYO</span>
+                                <small class="faculty-count">2 Akademisyen • Tıklayın</small>
+                            </div>
+                            <div class="expand-indicator">
+                                <i class="bi bi-chevron-down"></i>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapseSosyalMYO" class="accordion-collapse collapse" data-bs-parent="#vocationalAccordion">
+                        <div class="accordion-body p-0">
+                            <!-- Desktop Table View -->
+                            <div class="table-responsive desktop-view">
+                                <table class="table modern-table mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th>Akademisyen</th>
+                                            <th>Unvan</th>
+                                            <th>Bölüm</th>
+                                            <th>Oda</th>
+                                            <th>İletişim</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="academic-row">
+                                            <td>
+                                                <div class="academic-profile">
+                                                    <img src="/placeholder.svg?height=40&width=40" alt="Dr. Öğr. Üyesi Fatma Sosyal" class="profile-img">
+                                                    <div class="profile-info">
+                                                        <h6 class="profile-name">Fatma Sosyal</h6>
+                                                        <small class="profile-role">MYO Müdürü</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge modern-badge info">Dr. Öğr. Üyesi</span></td>
+                                            <td><span class="department-text">Sosyal Hizmet</span></td>
+                                            <td><span class="room-badge">1001-A</span></td>
+                                            <td>
+                                                <div class="contact-links">
+                                                    <a href="tel:+902125551001" class="contact-link">
+                                                        <i class="bi bi-telephone"></i>
+                                                    </a>
+                                                    <a href="mailto:f.sosyal@uni.edu.tr" class="contact-link">
+                                                        <i class="bi bi-envelope"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="academic-row">
+                                            <td>
+                                                <div class="academic-profile">
+                                                    <img src="/placeholder.svg?height=40&width=40" alt="Öğr. Gör. Mehmet Çocuk" class="profile-img">
+                                                    <div class="profile-info">
+                                                        <h6 class="profile-name">Mehmet Çocuk</h6>
+                                                        <small class="profile-role">Öğretim Görevlisi</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge modern-badge warning">Öğr. Gör.</span></td>
+                                            <td><span class="department-text">Çocuk Gelişimi</span></td>
+                                            <td><span class="room-badge">1002-B</span></td>
+                                            <td>
+                                                <div class="contact-links">
+                                                    <a href="tel:+902125551002" class="contact-link">
+                                                        <i class="bi bi-telephone"></i>
+                                                    </a>
+                                                    <a href="mailto:m.cocuk@uni.edu.tr" class="contact-link">
+                                                        <i class="bi bi-envelope"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- Mobile Cards View -->
+                            <div class="mobile-cards mobile-view">
+                                <div class="mobile-academic-card">
+                                    <div class="mobile-card-header">
+                                        <img src="/placeholder.svg?height=60&width=60" alt="Dr. Öğr. Üyesi Fatma Sosyal" class="mobile-profile-img">
+                                        <div class="mobile-profile-info">
+                                            <h6 class="mobile-name">Fatma Sosyal</h6>
+                                            <span class="badge modern-badge info mb-2">Dr. Öğr. Üyesi</span>
+                                            <p class="mobile-role">MYO Müdürü</p>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-card-body">
+                                        <div class="mobile-info-grid">
+                                            <div class="info-item">
+                                                <i class="bi bi-building"></i>
+                                                <span>Sosyal Hizmet</span>
+                                            </div>
+                                            <div class="info-item">
+                                                <i class="bi bi-door-open"></i>
+                                                <span>1001-A</span>
+                                            </div>
+                                        </div>
+                                        <div class="mobile-contact-actions">
+                                            <a href="tel:+902125551001" class="contact-btn phone">
+                                                <i class="bi bi-telephone"></i>
+                                                <span>Ara</span>
+                                            </a>
+                                            <a href="mailto:f.sosyal@uni.edu.tr" class="contact-btn email">
+                                                <i class="bi bi-envelope"></i>
+                                                <span>Mail</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mobile-academic-card">
+                                    <div class="mobile-card-header">
+                                        <img src="/placeholder.svg?height=60&width=60" alt="Öğr. Gör. Mehmet Çocuk" class="mobile-profile-img">
+                                        <div class="mobile-profile-info">
+                                            <h6 class="mobile-name">Mehmet Çocuk</h6>
+                                            <span class="badge modern-badge warning mb-2">Öğr. Gör.</span>
+                                            <p class="mobile-role">Öğretim Görevlisi</p>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-card-body">
+                                        <div class="mobile-info-grid">
+                                            <div class="info-item">
+                                                <i class="bi bi-building"></i>
+                                                <span>Çocuk Gelişimi</span>
+                                            </div>
+                                            <div class="info-item">
+                                                <i class="bi bi-door-open"></i>
+                                                <span>1002-B</span>
+                                            </div>
+                                        </div>
+                                        <div class="mobile-contact-actions">
+                                            <a href="tel:+902125551002" class="contact-btn phone">
+                                                <i class="bi bi-telephone"></i>
+                                                <span>Ara</span>
+                                            </a>
+                                            <a href="mailto:m.cocuk@uni.edu.tr" class="contact-btn email">
+                                                <i class="bi bi-envelope"></i>
+                                                <span>Mail</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Teknik Bilimler MYO -->
+                <div class="accordion-item faculty-card">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed modern-accordion-btn" type="button" 
+                                data-bs-toggle="collapse" data-bs-target="#collapseTeknikMYO" 
+                                aria-expanded="false" aria-controls="collapseTeknikMYO">
+                            <div class="faculty-icon engineering">
+                                <i class="bi bi-tools"></i>
+                            </div>
+                            <div class="faculty-info">
+                                <span class="faculty-name">Teknik Bilimler MYO</span>
+                                <small class="faculty-count">2 Akademisyen • Tıklayın</small>
+                            </div>
+                            <div class="expand-indicator">
+                                <i class="bi bi-chevron-down"></i>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapseTeknikMYO" class="accordion-collapse collapse" data-bs-parent="#vocationalAccordion">
+                        <div class="accordion-body p-0">
+                            <!-- Desktop Table View -->
+                            <div class="table-responsive desktop-view">
+                                <table class="table modern-table mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th>Akademisyen</th>
+                                            <th>Unvan</th>
+                                            <th>Bölüm</th>
+                                            <th>Oda</th>
+                                            <th>İletişim</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="academic-row">
+                                            <td>
+                                                <div class="academic-profile">
+                                                    <img src="/placeholder.svg?height=40&width=40" alt="Doç. Dr. Erkan Teknik" class="profile-img">
+                                                    <div class="profile-info">
+                                                        <h6 class="profile-name">Erkan Teknik</h6>
+                                                        <small class="profile-role">MYO Müdürü</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge modern-badge success">Doç. Dr.</span></td>
+                                            <td><span class="department-text">Makine Teknolojisi</span></td>
+                                            <td><span class="room-badge">1101-A</span></td>
+                                            <td>
+                                                <div class="contact-links">
+                                                    <a href="tel:+902125551101" class="contact-link">
+                                                        <i class="bi bi-telephone"></i>
+                                                    </a>
+                                                    <a href="mailto:e.teknik@uni.edu.tr" class="contact-link">
+                                                        <i class="bi bi-envelope"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="academic-row">
+                                            <td>
+                                                <div class="academic-profile">
+                                                    <img src="/placeholder.svg?height=40&width=40" alt="Öğr. Gör. Ayşe Elektrik" class="profile-img">
+                                                    <div class="profile-info">
+                                                        <h6 class="profile-name">Ayşe Elektrik</h6>
+                                                        <small class="profile-role">Öğretim Görevlisi</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge modern-badge warning">Öğr. Gör.</span></td>
+                                            <td><span class="department-text">Elektrik Teknolojisi</span></td>
+                                            <td><span class="room-badge">1102-B</span></td>
+                                            <td>
+                                                <div class="contact-links">
+                                                    <a href="tel:+902125551102" class="contact-link">
+                                                        <i class="bi bi-telephone"></i>
+                                                    </a>
+                                                    <a href="mailto:a.elektrik@uni.edu.tr" class="contact-link">
+                                                        <i class="bi bi-envelope"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- Mobile Cards View -->
+                            <div class="mobile-cards mobile-view">
+                                <div class="mobile-academic-card">
+                                    <div class="mobile-card-header">
+                                        <img src="/placeholder.svg?height=60&width=60" alt="Doç. Dr. Erkan Teknik" class="mobile-profile-img">
+                                        <div class="mobile-profile-info">
+                                            <h6 class="mobile-name">Erkan Teknik</h6>
+                                            <span class="badge modern-badge success mb-2">Doç. Dr.</span>
+                                            <p class="mobile-role">MYO Müdürü</p>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-card-body">
+                                        <div class="mobile-info-grid">
+                                            <div class="info-item">
+                                                <i class="bi bi-building"></i>
+                                                <span>Makine Teknolojisi</span>
+                                            </div>
+                                            <div class="info-item">
+                                                <i class="bi bi-door-open"></i>
+                                                <span>1101-A</span>
+                                            </div>
+                                        </div>
+                                        <div class="mobile-contact-actions">
+                                            <a href="tel:+902125551101" class="contact-btn phone">
+                                                <i class="bi bi-telephone"></i>
+                                                <span>Ara</span>
+                                            </a>
+                                            <a href="mailto:e.teknik@uni.edu.tr" class="contact-btn email">
+                                                <i class="bi bi-envelope"></i>
+                                                <span>Mail</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mobile-academic-card">
+                                    <div class="mobile-card-header">
+                                        <img src="/placeholder.svg?height=60&width=60" alt="Öğr. Gör. Ayşe Elektrik" class="mobile-profile-img">
+                                        <div class="mobile-profile-info">
+                                            <h6 class="mobile-name">Ayşe Elektrik</h6>
+                                            <span class="badge modern-badge warning mb-2">Öğr. Gör.</span>
+                                            <p class="mobile-role">Öğretim Görevlisi</p>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-card-body">
+                                        <div class="mobile-info-grid">
+                                            <div class="info-item">
+                                                <i class="bi bi-building"></i>
+                                                <span>Elektrik Teknolojisi</span>
+                                            </div>
+                                            <div class="info-item">
+                                                <i class="bi bi-door-open"></i>
+                                                <span>1102-B</span>
+                                            </div>
+                                        </div>
+                                        <div class="mobile-contact-actions">
+                                            <a href="tel:+902125551102" class="contact-btn phone">
+                                                <i class="bi bi-telephone"></i>
+                                                <span>Ara</span>
+                                            </a>
+                                            <a href="mailto:a.elektrik@uni.edu.tr" class="contact-btn email">
+                                                <i class="bi bi-envelope"></i>
+                                                <span>Mail</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Çıldır MYO -->
+                <div class="accordion-item faculty-card">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed modern-accordion-btn" type="button" 
+                                data-bs-toggle="collapse" data-bs-target="#collapseCildir" 
+                                aria-expanded="false" aria-controls="collapseCildir">
+                            <div class="faculty-icon business">
+                                <i class="bi bi-geo-alt-fill"></i>
+                            </div>
+                            <div class="faculty-info">
+                                <span class="faculty-name">Çıldır MYO</span>
+                                <small class="faculty-count">1 Akademisyen • Tıklayın</small>
+                            </div>
+                            <div class="expand-indicator">
+                                <i class="bi bi-chevron-down"></i>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapseCildir" class="accordion-collapse collapse" data-bs-parent="#vocationalAccordion">
+                        <div class="accordion-body p-0">
+                            <!-- Desktop Table View -->
+                            <div class="table-responsive desktop-view">
+                                <table class="table modern-table mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th>Akademisyen</th>
+                                            <th>Unvan</th>
+                                            <th>Bölüm</th>
+                                            <th>Oda</th>
+                                            <th>İletişim</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="academic-row">
+                                            <td>
+                                                <div class="academic-profile">
+                                                    <img src="/placeholder.svg?height=40&width=40" alt="Öğr. Gör. Hasan Çıldır" class="profile-img">
+                                                    <div class="profile-info">
+                                                        <h6 class="profile-name">Hasan Çıldır</h6>
+                                                        <small class="profile-role">MYO Müdürü</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge modern-badge warning">Öğr. Gör.</span></td>
+                                            <td><span class="department-text">Tarım ve Hayvancılık</span></td>
+                                            <td><span class="room-badge">1201-A</span></td>
+                                            <td>
+                                                <div class="contact-links">
+                                                    <a href="tel:+902125551201" class="contact-link">
+                                                        <i class="bi bi-telephone"></i>
+                                                    </a>
+                                                    <a href="mailto:h.cildir@uni.edu.tr" class="contact-link">
+                                                        <i class="bi bi-envelope"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- Mobile Cards View -->
+                            <div class="mobile-cards mobile-view">
+                                <div class="mobile-academic-card">
+                                    <div class="mobile-card-header">
+                                        <img src="/placeholder.svg?height=60&width=60" alt="Öğr. Gör. Hasan Çıldır" class="mobile-profile-img">
+                                        <div class="mobile-profile-info">
+                                            <h6 class="mobile-name">Hasan Çıldır</h6>
+                                            <span class="badge modern-badge warning mb-2">Öğr. Gör.</span>
+                                            <p class="mobile-role">MYO Müdürü</p>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-card-body">
+                                        <div class="mobile-info-grid">
+                                            <div class="info-item">
+                                                <i class="bi bi-building"></i>
+                                                <span>Tarım ve Hayvancılık</span>
+                                            </div>
+                                            <div class="info-item">
+                                                <i class="bi bi-door-open"></i>
+                                                <span>1201-A</span>
+                                            </div>
+                                        </div>
+                                        <div class="mobile-contact-actions">
+                                            <a href="tel:+902125551201" class="contact-btn phone">
+                                                <i class="bi bi-telephone"></i>
+                                                <span>Ara</span>
+                                            </a>
+                                            <a href="mailto:h.cildir@uni.edu.tr" class="contact-btn email">
+                                                <i class="bi bi-envelope"></i>
+                                                <span>Mail</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nihat Delibalta G��le MYO -->
+                <div class="accordion-item faculty-card">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed modern-accordion-btn" type="button" 
+                                data-bs-toggle="collapse" data-bs-target="#collapseGole" 
+                                aria-expanded="false" aria-controls="collapseGole">
+                            <div class="faculty-icon business">
+                                <i class="bi bi-geo-alt-fill"></i>
+                            </div>
+                            <div class="faculty-info">
+                                <span class="faculty-name">Nihat Delibalta Göle MYO</span>
+                                <small class="faculty-count">1 Akademisyen • Tıklayın</small>
+                            </div>
+                            <div class="expand-indicator">
+                                <i class="bi bi-chevron-down"></i>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapseGole" class="accordion-collapse collapse" data-bs-parent="#vocationalAccordion">
+                        <div class="accordion-body p-0">
+                            <!-- Desktop Table View -->
+                            <div class="table-responsive desktop-view">
+                                <table class="table modern-table mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th>Akademisyen</th>
+                                            <th>Unvan</th>
+                                            <th>Bölüm</th>
+                                            <th>Oda</th>
+                                            <th>İletişim</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="academic-row">
+                                            <td>
+                                                <div class="academic-profile">
+                                                    <img src="/placeholder.svg?height=40&width=40" alt="Dr. Öğr. Üyesi Nihat Göle" class="profile-img">
+                                                    <div class="profile-info">
+                                                        <h6 class="profile-name">Nihat Göle</h6>
+                                                        <small class="profile-role">MYO Müdürü</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge modern-badge info">Dr. Öğr. Üyesi</span></td>
+                                            <td><span class="department-text">Yerel Yönetimler</span></td>
+                                            <td><span class="room-badge">1301-A</span></td>
+                                            <td>
+                                                <div class="contact-links">
+                                                    <a href="tel:+902125551301" class="contact-link">
+                                                        <i class="bi bi-telephone"></i>
+                                                    </a>
+                                                    <a href="mailto:n.gole@uni.edu.tr" class="contact-link">
+                                                        <i class="bi bi-envelope"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- Mobile Cards View -->
+                            <div class="mobile-cards mobile-view">
+                                <div class="mobile-academic-card">
+                                    <div class="mobile-card-header">
+                                        <img src="/placeholder.svg?height=60&width=60" alt="Dr. Öğr. Üyesi Nihat Göle" class="mobile-profile-img">
+                                        <div class="mobile-profile-info">
+                                            <h6 class="mobile-name">Nihat Göle</h6>
+                                            <span class="badge modern-badge info mb-2">Dr. Öğr. Üyesi</span>
+                                            <p class="mobile-role">MYO Müdürü</p>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-card-body">
+                                        <div class="mobile-info-grid">
+                                            <div class="info-item">
+                                                <i class="bi bi-building"></i>
+                                                <span>Yerel Yönetimler</span>
+                                            </div>
+                                            <div class="info-item">
+                                                <i class="bi bi-door-open"></i>
+                                                <span>1301-A</span>
+                                            </div>
+                                        </div>
+                                        <div class="mobile-contact-actions">
+                                            <a href="tel:+902125551301" class="contact-btn phone">
+                                                <i class="bi bi-telephone"></i>
+                                                <span>Ara</span>
+                                            </a>
+                                            <a href="mailto:n.gole@uni.edu.tr" class="contact-btn email">
+                                                <i class="bi bi-envelope"></i>
+                                                <span>Mail</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Posof MYO -->
+                <div class="accordion-item faculty-card">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed modern-accordion-btn" type="button" 
+                                data-bs-toggle="collapse" data-bs-target="#collapsePosof" 
+                                aria-expanded="false" aria-controls="collapsePosof">
+                            <div class="faculty-icon business">
+                                <i class="bi bi-geo-alt-fill"></i>
+                            </div>
+                            <div class="faculty-info">
+                                <span class="faculty-name">Posof MYO</span>
+                                <small class="faculty-count">1 Akademisyen • Tıklayın</small>
+                            </div>
+                            <div class="expand-indicator">
+                                <i class="bi bi-chevron-down"></i>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapsePosof" class="accordion-collapse collapse" data-bs-parent="#vocationalAccordion">
+                        <div class="accordion-body p-0">
+                            <!-- Desktop Table View -->
+                            <div class="table-responsive desktop-view">
+                                <table class="table modern-table mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th>Akademisyen</th>
+                                            <th>Unvan</th>
+                                            <th>Bölüm</th>
+                                            <th>Oda</th>
+                                            <th>İletişim</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="academic-row">
+                                            <td>
+                                                <div class="academic-profile">
+                                                    <img src="/placeholder.svg?height=40&width=40" alt="Öğr. Gör. Selim Posof" class="profile-img">
+                                                    <div class="profile-info">
+                                                        <h6 class="profile-name">Selim Posof</h6>
+                                                        <small class="profile-role">MYO Müdürü</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge modern-badge warning">Öğr. Gör.</span></td>
+                                            <td><span class="department-text">Ormancılık</span></td>
+                                            <td><span class="room-badge">1401-A</span></td>
+                                            <td>
+                                                <div class="contact-links">
+                                                    <a href="tel:+902125551401" class="contact-link">
+                                                        <i class="bi bi-telephone"></i>
+                                                    </a>
+                                                    <a href="mailto:s.posof@uni.edu.tr" class="contact-link">
+                                                        <i class="bi bi-envelope"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- Mobile Cards View -->
+                            <div class="mobile-cards mobile-view">
+                                <div class="mobile-academic-card">
+                                    <div class="mobile-card-header">
+                                        <img src="/placeholder.svg?height=60&width=60" alt="Öğr. Gör. Selim Posof" class="mobile-profile-img">
+                                        <div class="mobile-profile-info">
+                                            <h6 class="mobile-name">Selim Posof</h6>
+                                            <span class="badge modern-badge warning mb-2">Öğr. Gör.</span>
+                                            <p class="mobile-role">MYO Müdürü</p>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-card-body">
+                                        <div class="mobile-info-grid">
+                                            <div class="info-item">
+                                                <i class="bi bi-building"></i>
+                                                <span>Ormancılık</span>
+                                            </div>
+                                            <div class="info-item">
+                                                <i class="bi bi-door-open"></i>
+                                                <span>1401-A</span>
+                                            </div>
+                                        </div>
+                                        <div class="mobile-contact-actions">
+                                            <a href="tel:+902125551401" class="contact-btn phone">
+                                                <i class="bi bi-telephone"></i>
+                                                <span>Ara</span>
+                                            </a>
+                                            <a href="mailto:s.posof@uni.edu.tr" class="contact-btn email">
+                                                <i class="bi bi-envelope"></i>
+                                                <span>Mail</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="modern-footer">
+        <div class="container">
+            <div class="footer-content text-center py-4">
+                <div class="footer-logo mb-3">
+                    <i class="bi bi-mortarboard-fill"></i>
+                </div>
+                <h6 class="footer-title">Üniversite Akademik Rehberi</h6>
+                <p class="footer-text">Akademik bilgiler güncel tutulmaktadır.</p>
+                <div class="footer-year">© 2024</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
